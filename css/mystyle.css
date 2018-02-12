@@ -1,0 +1,30 @@
+img{
+    width:10%;
+    height:20%;
+    position: relative;
+    top: 5em;
+    left: 34em;
+}
+ /*body{
+   color:rgb(255, 255, 255);
+}
+#comment{
+    color: green;
+}
+#course2{
+    color: rgb(255, 240, 240);
+}*/
+
+footer {
+       
+    bottom: 00px;
+    width: 100%;
+    text-align: center;
+    }
+
+.btn btn-success{
+border-top-color: rgb(0, 0, 0);
+    }
+.navbar-toggle collapsed{
+    color:black
+}

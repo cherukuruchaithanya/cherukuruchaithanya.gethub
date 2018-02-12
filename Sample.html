@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 101 Template</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/mystyle.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"> M03 Chaithanya Cherukuru</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+			<h2>Form control: input</h2>
+			<h1>CGPA Calculator:</h1>
+			Enter course 1 GPA :
+<br><br>
+			<input type="text" id="course1" name="TextBox1">
+			<br><br>
+Enter course 2 GPA :
+<br><br>
+<input type="text" id="course2" name="TextBox2">
+<br><br>
+Enter course 3 GPA :
+<br><br>
+			<input type="text" id="course3" name="Textbox3">
+<br><br>
+
+<input type="button" name="clickbtn" value="Calculate GPA" onclick="calculateGPA()">
+
+
+<br><br>
+<span id="output"></span>
+
+	</div>
+		  <script>
+		   function calculateGPA() {
+               
+			var first_course = parseInt(document.getElementById("course1").value);
+			var second_course = parseInt(document.getElementById("course2").value);
+			var third_course = parseInt(document.getElementById("course3").value);
+			var result = first_course + second_course + third_course;
+ 
+			document.getElementById("output").value = result;
+		}
+		  </script>
+	
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
